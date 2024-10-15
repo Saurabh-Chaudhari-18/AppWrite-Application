@@ -16,8 +16,8 @@ function EventList() {
     const fetchEvents = async () => {
       try {
         const response = await databases.listDocuments(
-          "670b6548003e12dd763a",
-          "670b6560003cb6d95f01"
+          "670e16510026bf6aed48",
+          "670e165b0001a5ae02e2"
         );
         setEvents(response.documents);
       } catch (error) {
@@ -49,8 +49,8 @@ function EventList() {
   const handleUpdateEvent = async () => {
     try {
       await databases.updateDocument(
-        "670b6548003e12dd763a",
-        "670b6560003cb6d95f01",
+        "670e16510026bf6aed48",
+        "670e165b0001a5ae02e2",
         selectedEvent,
         updatedEvent
       );
@@ -58,8 +58,8 @@ function EventList() {
 
       // Refresh the event list after update
       const response = await databases.listDocuments(
-        "670b6548003e12dd763a",
-        "670b6560003cb6d95f01"
+        "670e16510026bf6aed48",
+        "670e165b0001a5ae02e2"
       );
       setEvents(response.documents);
       setSelectedEvent(null); // Hide the update form
@@ -73,8 +73,8 @@ function EventList() {
   const handleDeleteClick = async (eventId) => {
     try {
       await databases.deleteDocument(
-        "670b6548003e12dd763a",
-        "670b6560003cb6d95f01",
+        "670e16510026bf6aed48",
+        "670e165b0001a5ae02e2",
         eventId
       );
       alert("Event deleted successfully!");

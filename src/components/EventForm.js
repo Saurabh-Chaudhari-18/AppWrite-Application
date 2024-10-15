@@ -12,8 +12,8 @@ function EventForm() {
     e.preventDefault();
     try {
       const response = await databases.createDocument(
-        "670b6548003e12dd763a", 
-        "670b6560003cb6d95f01", 
+        "670e16510026bf6aed48", 
+        "670e165b0001a5ae02e2", 
         "unique()", 
         {
           eventName,
