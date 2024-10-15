@@ -1,0 +1,30 @@
+/* Style for navigation links */
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #007acc; /* Button color */
+    color: #fff; /* White text */
+    border-radius: 8px; /* Rounded corners */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: #005b99; /* Darker on hover */
+  }
+  
+  .nav-links a:active {
+    background-color: #003d66; /* Even darker when active */
+  }
+  
+  /* Add spacing between the links */
+  .nav-links a + a {
+    margin-left: 20px;
+  }
+  

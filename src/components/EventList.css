@@ -1,0 +1,85 @@
+/* Dark theme for the event list */
+.event-list-container {
+    max-width: 900px;
+    margin: auto;
+    background-color: #1e1e1e; /* Dark background */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Strong shadow */
+    color: #f1f1f1;
+  }
+  
+  .event-list h2 {
+    color: #00d4ff; /* Accent color */
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .event-item {
+    background-color: #470b0b; /* Slightly lighter dark color for items */
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    color: #f1f1f1;
+  }
+  
+  .event-item:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+  }
+  
+  .event-item h3 {
+    color: #00ff88; /* Another accent color */
+    margin-bottom: 10px;
+  }
+  
+  .event-item p {
+    color: #ccc; /* Lighter color for description */
+  }
+  
+  .event-item time {
+    color: #ffcc00; /* Bright color for time */
+  }
+
+  .event-actions {
+    display: flex;
+    gap:500px;
+    margin-top: 10px;
+  }
+  
+  .update-btn {
+    width: 20%;
+    background-color: #ffc107;
+    color: black;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .delete-btn {
+    width: 20%;
+    background-color: #00490d;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .update-btn:hover, .delete-btn:hover {
+    opacity: 0.8;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .event-list-container {
+      padding: 20px;
+    }
+  
+    .event-item {
+      padding: 15px;
+    }
+  }
+  
